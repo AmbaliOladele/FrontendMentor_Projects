@@ -9,9 +9,9 @@
 - [Author](#author)
 
 ### Screenshot
-
-![](./pc-screenshot.png)
-![](./mobile-screenshot.png)
+![Alt](/wp.png "Title")
+![](./screenshot/pc-screenshot.png)
+![](./screenshot/mobile-screenshot.png)
 
 ### Links
 
