@@ -10,8 +10,8 @@
 
 ### Screenshot
 ![Alt](/wp.png "Title")
-![](./screenshot/pc-screenshot.png)
-![](./screenshot/mobile-screenshot.png)
+![pc screenshot](./screenshot/pc-screenshot.png)
+![mobile screenshot](./screenshot/mobile-screenshot.png)
 
 ### Links
 
