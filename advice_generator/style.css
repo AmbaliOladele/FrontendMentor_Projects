@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  list-style-type: none;
+}
+
+:root {
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--darkBlue);
+  padding: 0 20px;
+}
+
+.advice-wrapper {
+  padding: 50px 40px;
+  width: 500px;
+  /* height: 300px; */
+  text-align: center;
+  position: relative;
+  border-radius: 15px;
+  background-color: var(--darkGrayishBlue);
+}
+
+.advice-wrapper #advice_id {
+  color: var(--neonGreen);
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+.advice-wrapper #advice {
+  color: var(--lightCyan);
+  font-size: 20px;
+}
+
+.advice-wrapper .divider {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.advice-wrapper .divider img {
+  width: 100%;
+}
+
+.advice-wrapper #dice {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--neonGreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.advice-wrapper #dice:hover {
+  box-shadow: 0px 3px 60px var(--neonGreen);
+}
+
+#dice img {
+  height: 25px;
+  transition: all 0.3s ease-in-out;
+  object-fit: contain;
+}
+
+#dice:hover img {
+  transform: scale(1.1) rotateZ(90deg);
+}
+
+@media screen and (max-width: 400px) {
+  .advice-wrapper .divider img {
+    content: url("./images/pattern-divider-mobile.svg");
+  }
+}

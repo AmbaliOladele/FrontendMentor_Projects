@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="advice-wrapper">
+        <p id="advice_id">Advice #id</p>
+        <h1 id="advice">Click The Dice To Generate an Advice</h1>
+
+        <div class="divider">
+          <img src="./images/pattern-divider-desktop.svg" alt="" />
+        </div>
+
+        <div id="dice">
+          <img src="./images/icon-dice.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let adviceId = document.getElementById("advice_id");
+      let advice = document.getElementById("advice");
+
+      let adviceBtn = document.getElementById("dice");
+
+      adviceBtn.addEventListener("click", generateAdvice);
+
+      async function generateAdvice() {
+        const response = await fetch("	https://api.adviceslip.com/advice");
+
+        const data = await response.json();
+
+        advice.innerText = `"${data.slip.advice}"`;
+        adviceId.innerText = `advice #${data.slip.id}`;
+      }
+    </script>
+  </body>
+</html>
