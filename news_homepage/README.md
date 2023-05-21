@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://frmentornewshomepage.netlify.app/)
+- Solution URL: [so]([https://your-solution-url.com](https://github.com/AmbaliOladele/FrontendMentor_Projects/blob/main/news_homepage/index.html))
+- Live Site URL: [News Home Page](https://frmentornewshomepage.netlify.app/)
 
 ### Built with
 
