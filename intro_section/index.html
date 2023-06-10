@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!--======================= Font Awesome Links ========================-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navigations">
+          <div class="left-navigation">
+            <div class="snap-logo">
+              <img src="./images/logo.svg" alt="snap-logo" />
+            </div>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  >Features
+                  <span class="drop-icon"
+                    ><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
+
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">
+                      <span class="icon"
+                        ><img src="./images/icon-todo.svg" alt="todo image"
+                      /></span>
+                      Todo List
+                    </a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">
+                      <span class="icon"
+                        ><img
+                          src="./images/icon-calendar.svg"
+                          alt="calender image" /></span
+                      >Calender
+                    </a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link"
+                      ><span class="icon"
+                        ><img src="./images/icon-reminders.svg" alt="Reminders"
+                      /></span>
+                      Reminders</a
+                    >
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">
+                      <span class="icon"
+                        ><img src="./images/icon-planning.svg" alt="planning"
+                      /></span>
+                      Planning
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  >Company
+                  <span class="drop-icon"
+                    ><i class="fa-solid fa-chevron-down"></i></span
+                ></a>
+
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link"> History </a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link"> Our Team </a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link"> Blog </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Careers </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About </a>
+              </li>
+            </ul>
+          </div>
+          <div class="right-navigation">
+            <a href="#" class="auth-btn login">Login</a>
+            <a href="#" class="auth-btn register">Register</a>
+          </div>
+          <div class="hamburger">
+            <img src="./images/icon-menu.svg" alt="" />
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="left">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+
+          <a href="#" class="learn-more-btn">Learn more</a>
+
+          <div class="images">
+            <img src="./images/client-databiz.svg" alt="databiz" />
+            <img src="./images/client-audiophile.svg" alt="audiophile" />
+            <img src="./images/client-meet.svg" alt="meet" />
+            <img src="./images/client-maker.svg" alt="maker" />
+          </div>
+        </div>
+        <div class="right">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="./images/image-hero-desktop.png"
+            />
+            <source
+              media="(min-width: 500px)"
+              srcset="./images/image-hero-desktop.png"
+            />
+            <img src="./images/image-hero-mobile.png" alt="banner-image" />
+          </picture>
+        </div>
+      </main>
+
+      <!-- Offcanvas Background -->
+      <div class="offcanvas-bg"></div>
+      <div class="mobile-navigation">
+        <div class="close-nav">
+          <img src="./images/icon-close-menu.svg" alt="" />
+        </div>
+        <nav>
+          <ul class="mobile-nav-menu">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link"
+                >Features
+                <span class="drop-icon"
+                  ><i class="fa-solid fa-chevron-down"></i></span
+              ></a>
+
+              <ul class="mobile-dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link">
+                    <span class="icon"
+                      ><img src="./images/icon-todo.svg" alt="todo image"
+                    /></span>
+                    Todo List
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link">
+                    <span class="icon"
+                      ><img
+                        src="./images/icon-calendar.svg"
+                        alt="calender image" /></span
+                    >Calender
+                  </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link"
+                    ><span class="icon"
+                      ><img src="./images/icon-reminders.svg" alt="Reminders"
+                    /></span>
+                    Reminders</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link">
+                    <span class="icon"
+                      ><img src="./images/icon-planning.svg" alt="planning"
+                    /></span>
+                    Planning
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link"
+                >Company
+                <span class="drop-icon"
+                  ><i class="fa-solid fa-chevron-down"></i></span
+              ></a>
+
+              <ul class="mobile-dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link"> History </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link"> Our Team </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link"> Blog </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-auth">
+          <a href="#" class="auth-btn login">Login</a>
+          <a href="#" class="auth-btn register">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js" type="text/javascript"></script>
+  </body>
+</html>
