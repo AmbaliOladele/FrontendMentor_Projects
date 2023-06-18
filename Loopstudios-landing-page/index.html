@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loopstudios landing page Solution by Ambali Ridwan for FrontendMentor.io" />
+    <meta
+      name="keywords"
+      content="Frontend Mentor, Loopstudios landing page Challenge, Ambali Ridwan" />
+    <meta
+      property="og:title"
+      content="Loopstudios landing page - Frontend Mentor" />
+    <meta
+      property="og:description"
+      content="Loopstudios landing page Solution by Ambali Ridwan for FrontendMentor.io" />
+    <meta name="theme-color" content="#3CBDFD" />
+    <meta name="msapplication-navbutton-color" content="#3CBDFD" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3CBDFD" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <script src="./js/app-min.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./css/style-min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      media="print"
+      onload="this.media='all'" />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" />
+    </noscript>
+  </head>
+  <body>
+    <div class="container">
+      <header class="primary-header" aria-label="loopstudios header">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="loopstudios logo" />
+        </div>
+        <button class="hamburger" aria-expanded="false">
+          <span class="sr-only">Menu Button</span>
+          <img src="./images/icon-hamburger.svg" alt="hamburger icon" />
+        </button>
+        <nav
+          class="primary-navigation"
+          aria-label="header navigation"
+          data-visible="false">
+          <ul>
+            <li><a href="#" aria-label="About">About</a></li>
+            <li><a href="#" aria-label="Careers">Careers</a></li>
+            <li><a href="#" aria-label="Events">Events</a></li>
+            <li><a href="#" aria-label="Products">Products</a></li>
+            <li><a href="#" aria-label="Support">Support</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <picture>
+            <source
+              media="(min-width: 45rem)"
+              srcset="./images/desktop/image-hero.jpg" />
+            <img src="./images/mobile/image-hero.jpg" alt="" />
+          </picture>
+          <div class="details slide-down">
+            <h1 class="uppercase">Immersive experiences that deliver</h1>
+          </div>
+        </section>
+
+        <section class="interactive flow-space">
+          <div class="interactive-image slide-left">
+            <picture>
+              <source
+                media="(min-width: 45rem)"
+                srcset="./images/desktop/image-interactive.jpg" />
+              <img
+                src="./images/mobile/image-interactive.jpg"
+                alt="Interactive Image" />
+            </picture>
+          </div>
+          <div class="interactive-details slide-right">
+            <div class="interactive-block">
+              <h2>The leader in interactive VR</h2>
+              <p>
+                Founded in 2011, Loopstudios has been producing world-class
+                virtual reality projects for some of the best companies around
+                the globe. Our award-winning creations have transformed
+                businesses through digital experiences that bind to their brand.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="photo-gallery flow-space">
+          <header class="gallery-header" aria-label="Photo gallery header">
+            <h2>Our creations</h2>
+            <a href="#" class="viewall-button" aria-label="View All Photos"
+              >see all</a
+            >
+          </header>
+          <div class="albums">
+            <div class="album flip">
+              <a href="#" aria-label="deep earth album">
+                <picture>
+                  <source
+                    media="(min-width: 45rem)"
+                    srcset="./images/desktop/image-deep-earth.jpg" />
+                  <img
+                    src="./images/mobile/image-deep-earth.jpg"
+                    alt="deep earth image"
+                    class="gallery-image" />
+                </picture>
+                <h3 class="album-title">Deep earth</h3>
+              </a>
+            </div>
+            <div class="album">
+              <a href="#" aria-label="arcade album">
+                <picture>
+                  <source
+                    media="(min-width: 45rem)"
+                    srcset="./images/desktop/image-night-arcade.jpg" />
+                  <img
+                    src="./images/mobile/image-night-arcade.jpg"
+                    alt="night arcade image"
+                    class="gallery-image" />
+                </picture>
+                <h3 class="album-title">Night arcade</h3>
+              </a>
+            </div>
+            <div class="album">
+              <a href="#" aria-label="soccer album">
+                <picture>
+                  <source
+                    media="(min-width: 45rem)"
+                    srcset="./images/desktop/image-soccer-team.jpg" />
+                  <img
+                    src="./images/mobile/image-soccer-team.jpg"
+                    alt="soccer team image"
+                    class="gallery-image" />
+                </picture>
+                <h3 class="album-title">Soccer team vr</h3>
+              </a>
+            </div>
+            <div class="album">
+              <a href="#" aria-label="grid album">
+                <picture>
+                  <source
+                    media="(min-width: 45rem)"
+                    srcset="./images/desktop/image-grid.jpg" />
+                  <img
+                    src="./images/mobile/image-grid.jpg"
+                    alt="Grid image"
+                    class="gallery-image" />
+                </picture>
+                <h3 class="album-title">The grid</h3>
+              </a>
+            </div>
+            <div class="album">
+              <a href="#" aria-label="UFO album">
+                <picture>
+                  <source
+                    media="(min-width: 45rem)"
+                    srcset="./images/desktop/image-from-above.jpg" />
+                  <img
+                    src="./images/mobile/image-from-above.jpg"
+                    alt="From up above image"
+                    class="gallery-image" />
+                </picture>
+                <h3 class="album-title">From up above vr</h3>
+              </a>
+            </div>
+            <div class="album">
+              <a href="#" aria-label="borealis album">
+                <picture>
+                  <source
+                    media="(min-width: 45rem)"
+                    srcset="./images/desktop/image-pocket-borealis.jpg" />
+                  <img
+                    src="./images/mobile/image-pocket-borealis.jpg"
+                    alt="borealis image"
+                    class="gallery-image" />
+                </picture>
+                <h3 class="album-title">Pocket borealis</h3>
+              </a>
+            </div>
+            <div class="album">
+              <a href="#" aria-label="curiosity album">
+                <picture>
+                  <source
+                    media="(min-width: 45rem)"
+                    srcset="./images/desktop/image-curiosity.jpg" />
+                  <img
+                    src="./images/mobile/image-curiosity.jpg"
+                    alt="curiosity image"
+                    class="gallery-image" />
+                </picture>
+                <h3 class="album-title">The curiosity</h3>
+              </a>
+            </div>
+            <div class="album">
+              <a href="#" aria-label="fishes album">
+                <picture>
+                  <source
+                    media="(min-width: 45rem)"
+                    srcset="./images/desktop/image-fisheye.jpg" />
+                  <img
+                    src="./images/mobile/image-fisheye.jpg"
+                    alt="fish eye image"
+                    class="gallery-image" />
+                </picture>
+                <h3 class="album-title">Make it fish eye</h3>
+              </a>
+            </div>
+          </div>
+          <div class="bottom-btn-wrap">
+            <a
+              href="#"
+              class="viewall-button bottom-btn"
+              aria-label="View All Photos"
+              >see all</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="slide-left">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="loop studios logo" />
+          </div>
+          <nav class="footer-navigation" aria-label="footer navigation">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#" aria-label="About" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" aria-label="Careers" class="nav-link">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" aria-label="Events" class="nav-link">Events</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" aria-label="Products" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" aria-label="Support" class="nav-link">Support</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="slide-right">
+          <div class="social-links">
+            <a href="#"
+              ><img
+                src="./images/icon-facebook.svg"
+                alt="facebook icon"
+                aria-label="Facebook profile for loopstudios"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/icon-twitter.svg"
+                alt="twitter icon"
+                aria-label="Twitter profile for loopstudios"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/icon-pinterest.svg"
+                alt="pinterest icon"
+                aria-label="Pinterest profile for loopstudios"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/icon-instagram.svg"
+                alt="instagram icon"
+                aria-label="Instagram profile for loopstudios"
+            /></a>
+          </div>
+          <p class="copyrights">© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+      </footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/profile/AmbaliOladele"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.linkedin.com/in/ambali-ridwan-936065228/"
+          target="_blank"
+          >Ambali Ridwan</a
+        >.
+      </div>
+    </div>
+  </body>
+</html>
