@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Product preview card component Solution by Ambali Ridwan for FrontendMentor.io" />
+    <meta
+      name="keywords"
+      content="Frontend Mentor, Product preview card component Challenge, Ambali Ridwan" />
+    <meta
+      property="og:title"
+      content="Product preview card component - Frontend Mentor" />
+    <meta
+      property="og:description"
+      content="Product preview card component Solution by Ambali Ridwan for FrontendMentor.io" />
+    <meta name="theme-color" content="#3CBDFD" />
+    <meta name="msapplication-navbutton-color" content="#3CBDFD" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3CBDFD" />
+    <!-- Google fonts links -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;800&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;800&display=swap"
+      media="print"
+      onload="this.media='all'" />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;800&display=swap" />
+    </noscript>
+    <!-- Scroll reveal animation library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Custom css and js -->
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-image slide-down">
+          <picture>
+            <source
+              media="(min-width: 45rem)"
+              srcset="./images/image-product-desktop.jpg" />
+            <img src="./images/image-product-mobile.jpg" alt="product image" />
+          </picture>
+        </div>
+        <div class="card-details flow-space slide-up">
+          <p class="category-title ff-mont uppercase">Perfume</p>
+          <h1 class="ff-fraunce">Gabrielle Essence Eau De Parfum</h1>
+          <p class="ff-mont">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="item-price flex align-items-center">
+            <h2 class="price text-light-green ff-fraunce">$149.99</h2>
+            <span class="discount clr-gray line-through ff-fraunce">$169.99</span>
+          </div>
+          <button type="button" class="add-to-cart-button flex capitalize">
+            <span class="cart-icon"
+              ><img src="./images/icon-cart.svg" alt="cart icon"
+            /></span>
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/profile/AmbaliOladele"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.linkedin.com/in/ambali-ridwan-936065228/"
+        target="_blank"
+        >Ambali Ridwan</a
+      >.
+    </div>
+  </body>
+</html>
